@@ -1,0 +1,7 @@
+sudo apt install python3-venv
+sudo mkdir /var/pi-viewer
+sudo nano /var/pi-viewer/agent.py
+cd /var/pi-viewer/
+sudo python3 -m venv .venv
+sudo .venv/bin/pip install psutil websockets requests
+/var/pi-viewer/.venv/bin/python3 /var/pi-viewer/agent.py
